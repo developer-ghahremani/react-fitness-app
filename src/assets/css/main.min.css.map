@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,SAAS,CAAT,IAAS,CACT,SAAS,CAAT,UAAS,CACT,SAAS,CAAT,SAAS,CCFT,AAAA,kBAAkB,AAAC,CACjB,MAAM,CAAN,oCAAM,CACP,AACD,AAAA,gBAAgB,AAAC,CACf,MAAM,CAAN,oCAAM,CACP",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_component.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
