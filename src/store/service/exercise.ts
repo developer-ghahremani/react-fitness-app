@@ -5,14 +5,21 @@ const exerciseAPI = service.injectEndpoints({
   endpoints: (build) => ({
     getExercises: build.query<
       ExerciseModel[],
-      { limit?: number | string; page?: number | string }
+      {
+        limit?: number | string;
+        page?: number | string;
+        bodyPart?: string;
+      }
     >({
-      query: ({ limit = 6, page }) => ({
+      query: ({ limit = 6, page, bodyPart }) => ({
         url: "/exercise",
-        params: { limit, page },
+        params: { limit, page, bodyPart },
       }),
+    }),
+    getExercise: build.query<ExerciseModel, { id: string }>({
+      query: ({ id }) => ({ url: `/exercise/${id}` }),
     }),
   }),
 });
 
-export const { useGetExercisesQuery } = exerciseAPI;
+export const { useGetExercisesQuery, useGetExerciseQuery } = exerciseAPI;

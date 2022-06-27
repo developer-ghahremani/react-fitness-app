@@ -1,10 +1,12 @@
+import { Exercises } from "../../components";
 import { MainLayout } from "../../components/layout";
-import React from "react";
 
-type Props = {};
-
-const Exercise = (props: Props) => {
-  return <MainLayout showNavbar>salam</MainLayout>;
+const Exercise = () => {
+  return (
+    <MainLayout showNavbar>
+      <Exercises limit={12} />
+    </MainLayout>
+  );
 };
 
 export default Exercise;

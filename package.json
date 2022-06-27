@@ -10,15 +10,20 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "animate.css": "^4.1.1",
+    "axios": "^0.27.2",
+    "query-string": "^7.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "redux": "^4.2.0"
   },
   "devDependencies": {
+    "@types/query-string": "^6.3.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/react-icons": "^3.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",

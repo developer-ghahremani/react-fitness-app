@@ -3,7 +3,10 @@ import ExerciseList from "./ExerciseList";
 import { IButton } from "../general";
 import React from "react";
 
-const Exercises = () => {
+type Props = {
+  limit: number;
+};
+const Exercises = ({ limit }: Props) => {
   return (
     <div>
       <p className="mt-2 text-3xl font-bold text-center">
@@ -20,7 +23,7 @@ const Exercises = () => {
         <IButton className="px-8 text-white bg-red-600">Search</IButton>
       </div>
       <BodyParts />
-      <ExerciseList />
+      <ExerciseList limit={limit} />
     </div>
   );
 };

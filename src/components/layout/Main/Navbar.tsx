@@ -4,12 +4,12 @@ import LOGO from "./../../../assets/images/exercise-logo.png";
 import React from "react";
 import { pageNames } from "../../../constant";
 
-const Navbar = () => {
+type Props = { className?: string };
+const Navbar = (props: Props) => {
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
-    <div className="flex justify-between items-center">
+    <div className={`flex items-center justify-between ${props.className}`}>
       <img src={LOGO} className="w-14 h-14" alt="" />
       <div className="flex">
         <Link
